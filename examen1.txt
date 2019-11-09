@@ -1,0 +1,52 @@
+1. los pasos a seguir son:
+    1 - tener la aplicación en una ruta especifica
+    2 - abrir el simulador
+    3 - abrir appium
+    4 - en appium configurar las capabilities con las propiedades del emulador
+    5 - ejecutar las capabilities
+
+2.  clase: es el molde del cual se van a hacer los objetos, la cual se conforma por variables y métodos
+    método: es una accion que va a realizar, debe de ser claro y especifico
+    objeto: es un elemento creado a partir de una clase
+    herencia: es cuando se tiene una clase y de esta descienden mas clases, con el fin de evitar dupicidad de codigo, asi como agrupar tareas en comun
+    instanciar: es cuando se genera un objeto
+    atributos: son los elementos que conforman una clase
+
+3.  una clase se puede ver como las reglas del juego, un objeto es un jugador, ya que el tiene que seguir esas reglas para poder jugar,
+    los metodos son las acciones que puede realizar el jugador, como correr, patear el balon... la herencia se podria ver como el equipo,
+    ya que tienen cosas en comun, como el nobre, lugar al que pertenecen, uniforme... y los atributos pueden ser la fecha de nacimiento,
+    velocidad, posicion de juego...
+
+4. maven es un framework que nos ayuda a tener un proyecto configuado con las librerias y paquetes que necesitamos, de una forma mas facil
+
+5. mvn archetype:generate -DgroupId=<grupo> -DartifactId=<nombre> -DarchetypeArtifactId=maven-archetype-quickstart
+
+6. el archivo pom srve para configurar el proyecto con las librerias necesarias, su nombre, version y perfiles 
+   groupId es el paquete principal del proyecto
+   artifactId es el nombre del proyecto
+   version es la version del desarrollo del proyecto
+   dependencies es la seccion donde se declaran las dependencias que tiene el proyecto
+   dependency es la seccion donde viene la informacion de la dependency como su nombre, version,...
+   profiles es la seccion donde se declaran los profiles que se tienen en el proyecto
+   profile es la informacion de un perfil en especifico
+   properties es la seccion donde se declaran los properties del proyecto, como la version del encoding, version de java, maven, etc
+
+7. mvn clean
+8. mvn compile
+9. mvn install
+10. java -cp <archivo jar> <pachage.classMain>
+11. es un gestor de versiones y sirve para que se tenga un control de versiones en el proyecto de desarrollo  
+12. es un paquete donde se almacena la version del desarrollo
+13. git pull
+14. git commit
+15. git branch <nombre de rama>
+16. git checkout -b <nombre de rama>
+17. git pull
+19. por id, y por path
+20. es una herramienta que ayuda al desarrollo, el cual lo hace mas rapido y estructurado
+21. es un patron de diseño para realizar automatizacion del front end
+22. es una clase donde se configura un driver para conectarse por medio de appium al emulador, la cual extiende de driverConfiguration, 
+    como atributos tiene un logger, y un android driver,
+    tiene un metodo donde se configuran las capabilities, que son las configuraciones y propiedades del emulador,
+    al termino de realizar las capabilities, se realiza la configuracion del driver, donde se le pasa la url, las capabilities
+    y al final se realiza un metodo que regresa el driver
