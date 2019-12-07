@@ -1,4 +1,7 @@
+com\qaminds\pages\SecondPage.class
+com\qaminds\pages\IntroductionPage.class
+com\qaminds\pages\ThirdPage.class
 com\qaminds\pages\BasePage.class
 com\qaminds\coreappium\MyDriverAppium.class
-com\qaminds\pages\IntroductionPage.class
 com\qaminds\testget_apptive\App.class
+com\qaminds\pages\FormPage.class

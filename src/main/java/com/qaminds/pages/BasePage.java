@@ -11,13 +11,13 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
 public class BasePage {
+	
 	private AndroidDriver<AndroidElement> driver;
+	
 	private final WebDriverWait wait;
 	
 	public BasePage(MyDriverAppium driver) {
-		System.out.println("llega al BasePage");
-		this.wait = new WebDriverWait(driver.getDriver(),10);
-		System.out.println("llega al getDriver"+ driver);
+		this.wait = new WebDriverWait(driver.getDriver(), 10);
 		this.driver = driver.getDriver();
 	}
 
@@ -32,8 +32,9 @@ public class BasePage {
 	public void waitVisibility(By locator) {
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		} catch (TimeoutException e) {
+		}catch(TimeoutException e) {
 			e.printStackTrace();
 		}
 	}
+
 }

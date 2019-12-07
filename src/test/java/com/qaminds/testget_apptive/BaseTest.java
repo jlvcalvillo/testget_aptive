@@ -18,9 +18,8 @@ public class BaseTest {
 	@BeforeSuite
 	public void chargeDriver() {
 		try {
-			System.out.println("se carga el driver");
+			log.debug("se carga el driver");
 			myDriver.setUpAppiumDriver();
-			System.out.println(myDriver);
 		} catch(Exception e) {
 			log.error("error BaseTest.chargeDriver()", e);
 		}
@@ -32,9 +31,13 @@ public class BaseTest {
 			myDriver.getDriver().quit();
 		}
 	}
-	
-	public String getProperty(String key) {
-		return resource.getString(key);
+
+	public ResourceBundle getResource() {
+		return resource;
 	}
 
+	public void setResource(ResourceBundle resource) {
+		this.resource = resource;
+	}
+	
 }

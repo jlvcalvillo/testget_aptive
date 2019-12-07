@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.125 sec <<< FAILURE!
-validationTest(com.qaminds.testget_apptive.IntroductionTest)  Time elapsed: 0.029 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at com.qaminds.pages.BasePage.<init>(BasePage.java:19)
-	at com.qaminds.pages.IntroductionPage.<init>(IntroductionPage.java:10)
-	at com.qaminds.testget_apptive.IntroductionTest.validationTest(IntroductionTest.java:14)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.055 s - in TestSuite
